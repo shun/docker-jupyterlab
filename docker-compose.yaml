@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  jupyterlab:
+    build:
+      context: ./
+      dockerfile: ./jupyterlab/Dockerfile
+    ports:
+      - "18888:8888"
+    tty: true
+    #command: bash
+    volumes:
+      - ./jupyterlab/ws:/home/jupyter/ws
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    devices:
+      - /dev/video0:/dev/video0:mwr
+      - /dev/video1:/dev/video1:mwr
