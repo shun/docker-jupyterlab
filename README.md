@@ -8,4 +8,4 @@ MIT
 
 ## Author
 
-KUDO Shunsuke (a.k.a. skudo)
+KUDO Shunsuke (a.k.a. skudo_xx)
