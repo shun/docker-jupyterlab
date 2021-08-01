@@ -34,6 +34,7 @@ RUN apt update \
 	python3-pip \
 	tmux \
 	vim \
+	wget \
         v4l-utils\
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
